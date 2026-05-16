@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<p style="margin-bottom:1em;"><a href="{{ '/' | relative_url }}">← 回到首页</a></p>
+
+<p style="color:#666;font-size:0.9em;">
+  发布日期：{{ page.date | date: "%Y-%m-%d" }}
+  {% if page.tags %} · 标签：{% for tag in page.tags %}<code>{{ tag }}</code> {% endfor %}{% endif %}
+</p>
+
+{{ content }}
+
+<hr>
+<p style="margin-top:2em;"><a href="{{ '/' | relative_url }}">← 回到首页</a></p>

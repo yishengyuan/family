@@ -1,0 +1,18 @@
+title: 每日三餐
+description: 菲律宾就地取材 · 兼顾大人小孩 · 全天营养均衡
+theme: jekyll-theme-cayman
+markdown: kramdown
+encoding: UTF-8
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - .obsidian/
+  - .claude/
